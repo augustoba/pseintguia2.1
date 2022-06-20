@@ -1,0 +1,267 @@
+////////////////////////////GUIA 2.1
+////1. Un hombre desea saber si su sueldo es mayor al sueldo mínimo, el programa le pedirá al
+////	usuario su sueldo actual y el sueldo mínimo. Si el sueldo es mayor al mínimo se debe
+////		mostrar un mensaje por pantalla indicándolo.
+
+//Proceso EJERCICIO1
+//	definir Sueldo_Minimo,Sueldo Como Real
+//	Escribir "ingrese el sueldo minimo"
+//	Leer Sueldo_Minimo
+//	Escribir "ingrese el sueldo actual"
+//	Leer Sueldo
+//	
+//	Si Sueldo > Sueldo_Minimo Entonces
+//		Escribir "su sueldo actual es mayor al minimo"
+//	SiNo
+//		Escribir "su sueldo actual es menor al minimo"
+//	Fin Si
+//	
+//FinProceso
+
+////2. Realiza un programa que sólo permita introducir los caracteres ?S? y ?N?. Si el usuario
+////	ingresa alguno de esos dos caracteres se deberá de imprimir un mensaje por pantalla que
+////	diga "CORRECTO", en caso contrario, se deberá imprimir "INCORRECTO".
+
+//Algoritmo ejercicio2
+//definir letra Como Caracter
+//escribir "ingrese una letra"
+//leer letra
+//si letra ="s" o letra = "n"
+//	escribir "CORRECTO"	
+//SiNo
+//	ESCRIBIR "INCORRECTO"
+//FinSi
+//
+//FinAlgoritmo
+
+	
+////3.	Realizar un programa que pida un número y determine si ese número es par o impar.
+////		Mostrar en pantalla un mensaje que indique si el número es par o impar. (para que un
+////			número sea par, se debe dividir entre dos y su resto debe ser igual a 0). Nota: investigar
+////				la función mod de PseInt.	
+
+//Algoritmo ejercicio3
+//	Definir num Como Entero
+//	Escribir "ingrese un numero"
+//	Leer num	
+//	
+//	si	num%2=0 Entonces
+//		Escribir "es par"
+//	SiNo
+//		Escribir "es impar"
+//	FinSi
+//	
+//	
+//	
+//	FinAlgoritmo
+
+////4. Realizar un programa que pida introducir solo frases o palabras de 6 caracteres. Si el
+////	usuario ingresa una frase o palabra de 6 caracteres se deberá de imprimir un mensaje por
+////	pantalla que diga "CORRECTO", en caso contrario, se deberá imprimir "INCORRECTO".
+////Nota: investigar la función Longitud() de PseInt.
+
+//Algoritmo ejercicio4
+//	Definir Palabra Como Caracter
+//	Escribir "ingrese una palabra"
+//	leer Palabra
+//	
+//	si	Longitud(palabra) ==6 Entonces
+//		Escribir "correcto"
+//	SiNo
+//		Escribir "incorrecto"
+//	FinSi
+//	
+//FinAlgoritmo
+//	
+
+////5. Realizar un programa que pida una frase o palabra y si la frase o palabra es de 4
+////	caracteres de largo, el programa le concatenara un signo de exclamación al final, y si no
+////		es de 4 caracteres el programa le concatenara un signo de interrogación al final. El
+////	programa mostrará después la frase final. Nota: investigar la función Longitud() y
+////		Concatenar() de PseInt.
+
+//Algoritmo ejercicio5
+//	Definir Palabra,Cadena1,Cadena2 Como Caracter
+//	Escribir "Ingrese una palabra"
+//	Leer Palabra
+//	Cadena1= "!"
+//	Cadena2= "?"
+//	
+//	si	longitud(Palabra)==4	Entonces
+//		Palabra = Concatenar(Palabra,Cadena1)
+//		Escribir Palabra 
+//	SiNo
+//		Palabra = Concatenar(Palabra,Cadena2)
+//		Escribir Palabra
+//	FinSi
+//	FinAlgoritmo
+
+////
+////6. Escriba un programa que pida 3 notas y valide si esas notas están entre 1 y 10. Si están
+////		entre esos parámetros se debe poner en verdadero una variable de tipo lógico y si no
+////			ponerla en falso. Al final el programa
+
+//Algoritmo ejercicio6
+//	DEFINIR NOTA1,NOTA2,NOTA3 Como Entero
+//	DEFINIR VALIDAR Como Logico 
+//	Escribir "ingrese las 3 notas"
+//	Leer NOTA1,NOTA2,NOTA3
+//	
+//	Si (NOTA1 >= 1 y NOTA1 <= 10) y (NOTA2 >= 1 y NOTA2  <= 10) y (NOTA3 >= 1 y NOTA3  <=10)  Entonces
+//		validar = Verdadero
+//		Escribir validar
+//	SiNo
+//		validar = falso
+//		Escribir validar
+//	Fin Si
+//	
+//	
+//FinAlgoritmo
+
+
+////7. Escriba un programa que pida una frase o palabra y valide si la primera letra de esa frase
+////	es una ?A?. Si la primera letra es una ?A?, se deberá de imprimir un mensaje por pantalla
+////	que diga "CORRECTO", en caso contrario, se deberá imprimir "INCORRECTO". Nota:
+////	investigar la función Subcadena de PseInt.
+
+//Algoritmo ejercicio7
+//	definir cadena1,cadena2 Como Caracter
+//	
+//	escribir "escriba una frase o palabra"
+//	leer cadena1
+//	cadena2=subcadena(cadena1,1,1)
+//	
+//	si cadena2= "a"
+//		escribir "correcto la primer letra es : " cadena2
+//		
+//	SiNo
+//		escribir "incorrecto la primer letra es :" cadena2
+//		
+//	FinSi
+//	
+//FinAlgoritmo
+
+////8. Continuando el ejercicio anterior, ahora se pedirá una frase o palabra y se validara si la
+////	primera letra de la frase es igual a la última letra de la frase. Se deberá de imprimir un
+////	mensaje por pantalla que diga "CORRECTO", en caso contrario, se deberá imprimir
+////	"INCORRECTO".
+
+
+//algoritmo ejercicio8
+//	definir fraseopalabra ,subc1, subc2 como caracter
+//	definir long Como Entero
+//	escribir "ingrese una frase o palabra"
+//	leer fraseopalabra
+//	long= Longitud(fraseopalabra)
+//	subc1= subcadena (fraseopalabra,0,0)
+//	subc2= Subcadena(fraseopalabra,long-1,long-1)
+//	escribir subc1 ," " , subc2 Sin Saltar
+//	si subc1= subc2
+//		escribir " es correcto"
+//	SiNo
+//		escribir " es incorrecto"
+//		
+//	FinSi
+//FinAlgoritmo
+
+////9. Construir un programa que simule un menú de opciones para realizar las cuatro
+////	operaciones aritméticas básicas (suma, resta, multiplicación y división) con dos valores
+////	numéricos enteros. El usuario, además, debe especificar la operación con el primer
+////carácter de la operación que desea realizar: ?S' o ?s? para la suma, ?R? o ?r? para la resta, ?M?
+////	o ?m? para la multiplicación y ?D? o ?d? para la división.
+////
+
+//Algoritmo ejercicio9
+//	definir num1,num2, i Como Entero
+//	
+//	escribir "ingrese los 2 numeros"
+//	leer num1,num2
+//	
+//	escribir "ingrese 1 para suma 2 para resta 3 para multiplicacion 4 para division"
+//	leer i
+//	
+//	
+//	Segun i Hacer
+//		1: 
+//			escribir "la suma es "  num1 +num2 
+//		2:
+//			escribir "la resta es " num1 - num2
+//		3:
+//			escribir "la multiplicacion es " num1 * num2
+//		4:	
+//			escribir "la divsion es " num1 / num2
+//			
+//		De Otro Modo:
+//			escribir "opcion incorrecta"
+//	Fin Segun
+//	
+//FinAlgoritmo
+
+////10. Realizar un programa que, dado un número entero, visualice en pantalla si es par o impar.
+////En caso de que el valor ingresado sea 0, se debe mostrar "el número no es par ni impar".
+////Nota: investigar la función mod de PSeInt
+
+//Algoritmo ejercicio10
+//	definir num Como Entero
+//	escribir "escriba un numero"
+//	leer num
+//	
+//	si num=0 Entonces
+//		escribir "no es par ni impar"
+//		
+//	SiNo
+//		si num mod 2 <>0  entonces	
+//		escribir "es impar"
+//	sino  
+//		escribir "es par"
+//		
+//	FinSi
+//FinSi
+//
+//FinAlgoritmo
+
+
+////11. Escriba un programa para obtener el grado de eficiencia de un operario de una fábrica
+////	de tornillos, de acuerdo a las siguientes dos condiciones que se le imponen para un
+////	período de prueba:
+////		? Producir menos de 200 tornillos defectuosos.
+////		? Producir más de 10000 tornillos sin defectos.
+////	El grado de eficiencia se determina de la siguiente manera:
+////		? Si no cumple ninguna de las condiciones, grado 5.
+////			? Si sólo cumple la primera condición, grado 6.
+////				? Si sólo cumple la segunda condición, grado 7.
+////					? Si cumple las dos condiciones, grado 8
+
+//Algoritmo ejercicio11
+//	Definir tornillosdef , tornillossin Como Entero
+//	
+//	escribir "ingrese cantidad de tornillos defectuosos"
+//	leer tornillosdef
+//	Escribir "ingrese cantidad de tornillos sin defecto"
+//	leer tornillossin
+//	
+//	si tornillosdef <200 y tornillossin>10000 Entonces
+//		
+//		escribir " el grado de eficiencia es grado 8"
+//		
+//	
+//	SiNo
+//		si tornillosdef >200 y tornillossin>10000 entonces	
+//		escribir " el grado de eficiencia es grado 7" 
+//		
+//		
+//	Sino 
+//		si tornillosdef <200 y tornillossin<10000 
+//		escribir " el grado de eficiencia es grado 6" 
+//		
+//	
+//	sino 
+//		si tornillosdef >200 y tornillossin<10000 
+//		escribir " el grado de eficiencia es grado 5" 
+//	FinSi
+//FinSi
+//FinSi
+//FinSi
+
+//FinAlgoritmo
+

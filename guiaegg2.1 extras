@@ -1,0 +1,417 @@
+////////////////////////////////////EXTRAS guia 2.1////////////////////////////////////////////
+////1. Realizar un programa que pida tres notas y determine si un alumno aprueba o reprueba
+////	un curso, sabiendo que aprobará el curso si su promedio de tres calificaciones es mayor
+////		o igual a 70; y reprueba en caso contrario. 
+
+
+//Algoritmo ejercicio1
+//	definir nota1,nota2,nota3 , promedio Como Entero
+//	escribir "ingrese una nota "
+//	leer nota1
+//	escribir "ingrese una nota"
+//	leer nota2
+//	escribir "ingrese una nota"
+//	leer nota3
+//	promedio = (nota1 + nota2 + nota3) /3
+//	Si promedio >=70 Entonces
+//		escribir "el alumno esta aprobado, su promedio es de : " promedio
+//	SiNo
+//		escribir "el alumno esta desaprobado, su promedio es de : " promedio
+//	Fin Si
+//	
+//FinAlgoritmo
+
+
+////2. Una tienda ofrece para los meses de septiembre, octubre y noviembre un descuento del
+////	10% sobre el total de la compra que realiza un cliente. Solicitar al usuario que ingrese un
+////	mes y el importe de la compra. El programa debe calcular cuál es el monto total que se
+////	debe cobrar al cliente e imprimirlo por pantalla. 
+
+
+
+//Algoritmo ejercicio2
+//	definir mes Como caracter	
+//	Definir importe Como Real
+//		
+//	escribir "ingrese un mes"
+//	leer mes
+//	escribir "ingrese el importe de la compra"
+//	leer importe
+//	
+//	Si (mes="septiembre") o (mes="octubre") o (mes="noviembre") Entonces
+//		escribir "el valor total es: $",importe ," el valor con descuento es: $", importe*.9
+//	SiNo
+//		escribir "el valor total es: $", importe, " no posee descuento "
+//	Fin Si
+//	
+//FinAlgoritmo
+
+
+////3. Solicitar al usuario que ingrese dos números enteros y determinar si ambos son pares o
+////	impares. Mostrar en pantalla un mensaje que indique "Ambos números son pares" siempre
+////	y cuando cumplan con la condición. En caso contrario se deberá imprimir el siguiente
+////	mensaje "Los números no son pares, o uno de ellos no es par".
+
+//Algoritmo ejercicio3
+//	definir num1,num2,resto1,resto2 Como Entero
+//	Escribir "ingrese dos numeros enteros"
+//	Leer num1,num2
+//	
+//	resto1=num1%2
+//	resto2=num2%2
+//	
+//	Escribir resto1,resto2
+//	
+//	si	(resto1<1) y (resto2<1)	
+//		Escribir "Ambos números son pares"
+//	SiNo
+//		Escribir "Los números no son pares, o uno de ellos no es par"
+//	FinSi
+//FinAlgoritmo
+//
+//
+
+
+////4. La empresa "Te llevo a todos lados" está destinada al alquiler de autos y tiene un sistema
+////de tarifa que consiste en cobrar el alquiler por hora. Si el cliente devuelve el auto dentro
+////	de las 2 horas de uso el valor que corresponde pagar es de $400 pesos y la nafta va de
+////	regalo. Cuando el cliente regresa a la empresa pasadas las 2 horas, se ingresan la
+////	cantidad de litros de nafta gastados y el tiempo transcurrido en horas. Luego, se le cobra
+////	40 pesos por litro de nafta gastado, y la hora se fracciona en minutos, cobrando un total
+////	de $5,20 el minuto de uso. Realice un programa que permita registrar esa información y el
+////	total a pagar por el cliente.
+
+
+//Algoritmo ejerecicio4
+//	Definir horas,litros Como Entero
+//	Escribir "ingrese la cantidad de horas"
+//	Leer horas
+//	Escribir "ingrese la cantidad de litros"
+//	Leer litros
+//	
+//	si	horas<=2 Entonces
+//		Escribir "debe abonar: $400"
+//		
+//	SiNo
+//		Escribir "debe abonar: $", (horas*60)*5.2+(litros*40)
+//	FinSi
+//	
+//		
+//FinAlgoritmo
+
+////
+////5. Solicitar al usuario que ingrese un valor entre 1 y 7. EL programa debe mostrar por pantalla
+////un mensaje que indique a qué día de la semana corresponde. Considere que el número 1
+////corresponde al día "Lunes", y así sucesivamente.
+
+
+//Algoritmo ejercicio5
+//	Definir num Como Entero
+//	
+//	Escribir "ingrese un valor entre 1 y 7"
+//	Leer num
+//	Segun num Hacer
+//		1:
+//			Escribir "Lunes"
+//		2:
+//			Escribir "Martes"
+//		3:
+//			Escribir "Miercoles"
+//		4:
+//			Escribir "Jueves"
+//		5:
+//			Escribir "Viernes"
+//		6:
+//			Escribir "Sabado"
+//		7:
+//			Escribir "Domingo"
+//		De Otro Modo:
+//			Escribir "Ingrese una opcion correcta"
+//	Fin Segun
+//	
+//	
+//	
+//FinAlgoritmo
+
+////6. Leer tres números que denoten una fecha (día, mes, año) y comprobar que sea una fecha
+////válida. Si la fecha no es válida escribir un mensaje de error por pantalla. Si la fecha es
+////		válida se debe imprimir la fecha cambiando el número que representa el mes por su
+////	nombre. Por ejemplo: si se introduce 1 2 2006, se deberá imprimir "1 de febrero de 2006".
+
+//Algoritmo ejercicio6
+//	definir dia,mes,anio Como Entero
+//	Escribir "ingrese dia, mes año"
+//	Leer dia,mes,anio
+//	
+//	
+//	si dia<1 o d> 31 Entonces
+//		Repetir
+//			Escribir "dia incorrecto, ingrese un dia"
+//			leer dia
+//	Hasta Que dia>0 o d<= 31	
+//	
+//		
+//	FinSi
+//	
+//	si	mes<1 o d> 12 Entonces
+//		Repetir
+//		Escribir "mes incorrecto, ingrese un mes"
+//		Leer mes
+//		
+//	Hasta Que mes>0 o d<= 12	
+//	FinSi
+//	
+//	Segun mes Hacer
+//		1:
+//			escribir dia," de enero ",anio
+//		2:
+//			escribir dia," de febrero ",anio
+//		3:
+//			escribir dia," de marzo ",anio
+//		4:
+//			escribir dia," de abril ",anio
+//		5:
+//			escribir dia," de mayo ",anio
+//		6:
+//			escribir dia," de junio ",anio
+//			
+//		7:
+//			escribir dia," de julio ",anio
+//		8:
+//			escribir dia," de agosto ",anio
+//		9:
+//			escribir dia," de septiembre ",anio
+//			
+//		10:
+//			escribir dia," de octubre ",anio
+//		11:
+//			escribir dia," de noviembre ",anio
+//		12:
+//			escribir dia," de diciembre ",anio
+//		
+//	Fin Segun
+//
+//FinAlgoritmo
+
+
+////7. Hacer un algoritmo que lea un número por el teclado y determine si tiene tres dígitos.
+
+//Algoritmo ejercicio7
+//	Definir num Como Entero
+//	Escribir "ingrese un numero"
+//	Leer num
+//	si	num > 99 y num <1000 Entonces
+//		
+//		Escribir "tiene 3 digitos"
+//		
+//	SiNo
+//		Escribir "no tiene 3 digitos" 
+//	FinSi
+//	
+//	
+//FinAlgoritmo
+
+////8. Si se compran menos de cinco llantas el precio es de $3000 cada una, si se compran
+////		entre 5 y 10 el precio es de $2500, y si se compran más de 10 el precio es $2000.
+////			Obtener la cantidad de dinero que una persona tiene que pagar por cada una de las
+////			llantas que compra, y el monto total que tiene que pagar por el total de la compra.
+
+//Proceso ejercicio8
+
+//	Definir Llantas Como Entero
+//	Escribir "ingresar cantidad de llantas que comprara"
+//	Leer Llantas	
+//	
+//	si Llantas	<=5	Entonces
+//		Escribir "debe pagar $3000 por cada llanta, el precio total es: ",llantas*3000
+//		
+//		siNo
+//		si Llantas	<=10	Entonces
+//			Escribir "debe pagar $2500 por cada llanta , el precio total es: ",llantas*2500
+//			
+//		SiNo
+//			
+//			Escribir "debe pagar $2000 por cada llanta, el precio total es: ",llantas*2000
+//		
+//	FinSi
+//FinSi
+//	
+//FinProceso
+
+////9. Realice un programa que, dado un año, nos diga si es bisiesto o no. Un año es bisiesto
+////bajo las siguientes condiciones: Un año divisible por 4 es bisiesto y no debe ser divisible
+////	por 100. Si un año es divisible por 100 y además es divisible por 400, también resulta
+////	bisiesto. Nota: recuerde la función mod de PseInt
+
+//Proceso ejercicio9
+
+//	Definir anio Como Entero
+//	Escribir "ingrese un año"
+//	Leer anio
+//	
+//	si	(anio mod 4 = 0) y (anio mod 100 <> 0) o (anio mod 400 = 0) Entonces
+//		Escribir "el año es bisiesto"
+//	SiNo
+//		Escribir "el año no es bisiesto"
+//		
+//	FinSi
+//	
+//	
+//FinProceso
+
+
+
+////10. Una verdulería ofrece las manzanas con descuento según la siguiente tabla:
+////N DE KILOS COMPRADOS % DESCUENTO
+////0 - 2  ---- 0%	
+////2.01 - 5 ---  10%
+////5.01 -10---15%
+////10.01 en adelante -20%
+////Determinar cuánto pagará una persona que compre manzanas en esa verdulería
+
+//Proceso ejercicio10
+//	
+//	Definir kilos Como entero
+//	Definir precio Como Real
+//	Leer kilos
+//	precio= 100
+//	
+//	si	kilos <=2	entonces
+//		Escribir "debe pagar: $", kilos*100
+//	SiNo
+//		
+//		si kilos >2 y kilos <=5 	entonces
+//		Escribir "debe pagar: $", kilos*90
+//		
+//	SiNo
+//		si kilos >5 y kilos <=10 	entonces
+//		Escribir "debe pagar: $", kilos*85
+//	SiNo
+//		Escribir "debe pagar: $", kilos*80
+//	FinSi
+//	
+//	finsi
+//	
+//	FinSi
+//		
+//FinProceso
+
+////11. El promedio de los trabajos prácticos de un curso se calcula en base a cuatro notas de las
+////cuales se elimina la nota menor y se promedian las tres notas más altas. Escriba un
+////programa que determine cuál es la nota eliminada y el promedio de los trabajos prácticos
+////de un estudiante.
+
+//Algoritmo ejercicio11
+//	
+//	Definir nota1, nota2, nota3, nota4, aux Como entero
+//	Escribir "ingrese las 4 notas"
+//	Leer nota1,nota2,nota3, nota4
+//	
+//	si	nota1 >nota2 y nota1 >nota3 y nota1 >nota4 Entonces
+//		
+//		aux= nota1
+//		
+//	SiNo
+//		si	 nota2 >nota1 y nota2 >nota3 y nota2 >nota4 Entonces
+//			
+//			aux= nota2
+//			
+//		SiNo
+//			
+//			si nota3 >nota1 y nota3 >nota2 y nota3 >nota4 Entonces
+//				
+//				aux= nota3
+//				
+//			SiNo
+//				aux=nota4
+//			FinSi
+//			
+//			FinSi
+//			
+//			
+//		FinSi
+//		
+//	Escribir "la nota eliminada es: ", aux
+//	Escribir "el promedio es: ", (nota1+nota2+nota3+nota4-aux)/3
+//	
+//FinAlgoritmo
+
+////12. Una empresa tiene personal de distintas áreas con distintas condiciones de contratación y
+////formas de pago. El departamento de contabilidad necesita calcular los sueldos semanales
+////(lunes a viernes) en base a las 3 modalidades de sueldo:
+////a) comisión
+////b) salario fijo + comisión, y
+////c) salario fijo
+////a) Para la modalidad salario por comisión se debe ingresar el monto total de las ventas
+////realizadas en la semana, y el 40% de ese monto total corresponde al salario del empleado.
+////b) Para la condición de salario fijo + comisión, se debe ingresar el valor que se paga por
+////hora, la cantidad de horas trabajadas semanalmente y el monto total de las ventas en
+////esa semana. En este tipo de contrato las horas extras no están contempladas y se fija
+////como máximo 40 horas por semana. La comisión por las ventas se calcula como 25% del valor de venta total.
+////c) Finalmente,, para la modalidad de salario fijo se debe ingresar el valor que se paga por
+////hora y la cantidad de horas trabajadas en la semana. En el caso de exceder las 40
+////horas semanales, las horas extras se deben pagar con un extra del 50% del valor de la
+////hora. Realizar un menú de opciones para poder elegir el tipo de contrato que tiene un empleado.
+
+Algoritmo ejercicio12
+	
+	Definir opc como Caracter
+	Definir valorh,horas, ventas, horaextra Como Real
+	
+	Escribir "ingrese una opcion  a) comisión, b) salario fijo + comisión, c) salario fijo"
+	Leer opc
+	
+	
+	
+	Si opc ="a"  Entonces
+			Escribir "ingrese el monto de ventas"
+			Leer ventas
+			Escribir "el sueldo a abonar es : $", ventas*.4
+						
+	sino 
+			si 				opc ="b" entonces
+			
+			Escribir "ingrese la cantidad de horas trabajadas y el precio por hora"
+			Leer horas,valorh
+			Escribir "ingrese el monto de ventas"
+			Leer ventas
+			
+		sino 
+			si opc ="b" y horas <=40 entonces
+				Escribir "el sueldo a abonar es : $", (horas*valorh)+ (ventas*.25)
+			sino 
+				si opc ="b" y horas >40 entonces
+				Escribir "el sueldo a abonar es : $", (40*valorh)+ (ventas*.25)
+			
+		SiNo
+			si  opc ="c" Entonces
+				Escribir "ingrese la cantidad de horas trabajadas y el precio por hora"
+			
+			Leer horas,valorh
+			
+		SiNo
+			si  opc ="c" y horas <=40 Entonces
+				Escribir "el sueldo a abonar es : $",horas*valorh
+				
+			SiNo
+				si  opc ="c" y horas >40 Entonces
+					horaextra = horas-40
+					Escribir "el sueldo a abonar es : $",(horas*valorh)+ (horaextra* valorh*1.5)
+				
+			FinSi
+	Fin Si
+	FinSi
+FinSi
+FinSi
+FinSi
+FinSi
+	
+
+FinAlgoritmo
+
+
+
+
+
+
+
