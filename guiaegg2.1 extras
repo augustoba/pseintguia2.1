@@ -364,54 +364,49 @@ Algoritmo ejercicio12
 	
 	
 	Si opc ="a"  Entonces
-			Escribir "ingrese el monto de ventas"
-			Leer ventas
-			Escribir "el sueldo a abonar es : $", ventas*.4
-						
+		Escribir "ingrese el monto de ventas"
+		Leer ventas
+		Escribir "el sueldo a abonar es : $", ventas*.4
+		
 	sino 
-			si 				opc ="b" entonces
+		si 	opc ="b" entonces
 			
 			Escribir "ingrese la cantidad de horas trabajadas y el precio por hora"
 			Leer horas,valorh
 			Escribir "ingrese el monto de ventas"
 			Leer ventas
 			
-		sino 
-			si opc ="b" y horas <=40 entonces
-				Escribir "el sueldo a abonar es : $", (horas*valorh)+ (ventas*.25)
-			sino 
-				si opc ="b" y horas >40 entonces
-				Escribir "el sueldo a abonar es : $", (40*valorh)+ (ventas*.25)
-			
-		SiNo
-			si  opc ="c" Entonces
-				Escribir "ingrese la cantidad de horas trabajadas y el precio por hora"
-			
-			Leer horas,valorh
-			
-		SiNo
-			si  opc ="c" y horas <=40 Entonces
-				Escribir "el sueldo a abonar es : $",horas*valorh
-				
-			SiNo
-				si  opc ="c" y horas >40 Entonces
-					horaextra = horas-40
-					Escribir "el sueldo a abonar es : $",(horas*valorh)+ (horaextra* valorh*1.5)
-				
-			FinSi
-	Fin Si
-	FinSi
-FinSi
-FinSi
-FinSi
-FinSi
-	
 
+				SiNo
+					si  opc ="c" Entonces
+						Escribir "ingrese la cantidad de horas trabajadas y el precio por hora"
+						
+						Leer horas,valorh
+						
+
+							FinSi
+						Fin Si
+					FinSi
+									 
+					si opc ="b" y horas <=40 entonces
+						Escribir "el sueldo a abonar es : $", (horas*valorh)+ (ventas*.25)
+					sino 
+						si opc ="b" y horas >40 entonces
+							Escribir "el sueldo a abonar es : $", (40*valorh)+ (ventas*.25)
+							
+						SiNo
+							si  opc ="c" y horas <=40 Entonces
+								Escribir "el sueldo a abonar es : $",horas*valorh
+								
+							SiNo
+								si  opc ="c" y horas >40 Entonces
+									horaextra = horas-40
+									Escribir "el sueldo a abonar es : $",(horas*valorh)+ (horaextra* valorh*1.5)	
+									
+								FinSi
+							FinSi
+						FinSi
+					FinSi
+					
 FinAlgoritmo
-
-
-
-
-
-
 
