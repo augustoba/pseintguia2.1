@@ -12,6 +12,7 @@
 //	leer nota2
 //	escribir "ingrese una nota"
 //	leer nota3
+//	
 //	promedio = (nota1 + nota2 + nota3) /3
 //	Si promedio >=70 Entonces
 //		escribir "el alumno esta aprobado, su promedio es de : " promedio
@@ -32,7 +33,7 @@
 //Algoritmo ejercicio2
 //	definir mes Como caracter	
 //	Definir importe Como Real
-//		
+//	
 //	escribir "ingrese un mes"
 //	leer mes
 //	escribir "ingrese el importe de la compra"
@@ -60,7 +61,7 @@
 //	resto1=num1%2
 //	resto2=num2%2
 //	
-//	Escribir resto1,resto2
+//	Escribir resto1,resto2 
 //	
 //	si	(resto1<1) y (resto2<1)	
 //		Escribir "Ambos números son pares"
@@ -68,8 +69,8 @@
 //		Escribir "Los números no son pares, o uno de ellos no es par"
 //	FinSi
 //FinAlgoritmo
-//
-//
+
+
 
 
 ////4. La empresa "Te llevo a todos lados" está destinada al alquiler de autos y tiene un sistema
@@ -96,7 +97,7 @@
 //		Escribir "debe abonar: $", (horas*60)*5.2+(litros*40)
 //	FinSi
 //	
-//		
+//	
 //FinAlgoritmo
 
 ////
@@ -410,4 +411,4 @@
 //	FinSi
 //	
 //FinAlgoritmo
-//
+
