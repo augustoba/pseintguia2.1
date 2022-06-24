@@ -5,6 +5,7 @@
 
 //Proceso EJERCICIO1
 //	definir Sueldo_Minimo,Sueldo Como Real
+//	
 //	Escribir "ingrese el sueldo minimo"
 //	Leer Sueldo_Minimo
 //	Escribir "ingrese el sueldo actual"
@@ -23,15 +24,18 @@
 ////	diga "CORRECTO", en caso contrario, se deberá imprimir "INCORRECTO".
 
 //Algoritmo ejercicio2
-//definir letra Como Caracter
-//escribir "ingrese una letra"
-//leer letra
-//si letra ="s" o letra = "n"
-//	escribir "CORRECTO"	
-//SiNo
-//	ESCRIBIR "INCORRECTO"
-//FinSi
-//
+//	
+//	definir letra Como Caracter
+//	
+//	escribir "ingrese una letra"
+//	leer letra
+//	
+//	si letra ="s" o letra ="S" o letra = "n" letra ="N"
+//		escribir "CORRECTO"	
+//	SiNo
+//		ESCRIBIR "INCORRECTO"
+//	FinSi
+//	
 //FinAlgoritmo
 
 	
@@ -41,6 +45,7 @@
 ////				la función mod de PseInt.	
 
 //Algoritmo ejercicio3
+//	
 //	Definir num Como Entero
 //	Escribir "ingrese un numero"
 //	Leer num	
@@ -52,8 +57,7 @@
 //	FinSi
 //	
 //	
-//	
-//	FinAlgoritmo
+//FinAlgoritmo
 
 ////4. Realizar un programa que pida introducir solo frases o palabras de 6 caracteres. Si el
 ////	usuario ingresa una frase o palabra de 6 caracteres se deberá de imprimir un mensaje por
@@ -72,7 +76,7 @@
 //	FinSi
 //	
 //FinAlgoritmo
-//	
+
 
 ////5. Realizar un programa que pida una frase o palabra y si la frase o palabra es de 4
 ////	caracteres de largo, el programa le concatenara un signo de exclamación al final, y si no
@@ -94,7 +98,7 @@
 //		Palabra = Concatenar(Palabra,Cadena2)
 //		Escribir Palabra
 //	FinSi
-//	FinAlgoritmo
+//FinAlgoritmo
 
 ////
 ////6. Escriba un programa que pida 3 notas y valide si esas notas están entre 1 y 10. Si están
@@ -117,7 +121,7 @@
 //	
 //	
 //FinAlgoritmo
-
+//
 
 ////7. Escriba un programa que pida una frase o palabra y valide si la primera letra de esa frase
 ////	es una ?A?. Si la primera letra es una ?A?, se deberá de imprimir un mensaje por pantalla
@@ -129,7 +133,9 @@
 //	
 //	escribir "escriba una frase o palabra"
 //	leer cadena1
-//	cadena2=subcadena(cadena1,1,1)
+//	
+//	cadena2=subcadena(cadena1,0,0)
+//	
 //	
 //	si cadena2= "a"
 //		escribir "correcto la primer letra es : " cadena2
@@ -146,16 +152,20 @@
 ////	mensaje por pantalla que diga "CORRECTO", en caso contrario, se deberá imprimir
 ////	"INCORRECTO".
 
-
+//
 //algoritmo ejercicio8
+//	
 //	definir fraseopalabra ,subc1, subc2 como caracter
 //	definir long Como Entero
+//	
 //	escribir "ingrese una frase o palabra"
 //	leer fraseopalabra
-//	long= Longitud(fraseopalabra)
+//	
+//	long= Longitud(fraseopalabra) 	
 //	subc1= subcadena (fraseopalabra,0,0)
 //	subc2= Subcadena(fraseopalabra,long-1,long-1)
-//	escribir subc1 ," " , subc2 Sin Saltar
+//	
+//	escribir "la primer letra es: " subc1 ," " ,"la segunda letra es: "  subc2 Sin Saltar
 //	si subc1= subc2
 //		escribir " es correcto"
 //	SiNo
@@ -172,23 +182,24 @@
 ////
 
 //Algoritmo ejercicio9
-//	definir num1,num2, i Como Entero
+//	definir num1,num2 Como Entero
+//	Definir i Como Caracter
 //	
 //	escribir "ingrese los 2 numeros"
 //	leer num1,num2
 //	
-//	escribir "ingrese 1 para suma 2 para resta 3 para multiplicacion 4 para division"
+//	escribir "ingrese s para suma r para resta m para multiplicacion d para division"
 //	leer i
 //	
 //	
 //	Segun i Hacer
-//		1: 
+//		"s": 
 //			escribir "la suma es "  num1 +num2 
-//		2:
+//		"r":
 //			escribir "la resta es " num1 - num2
-//		3:
+//		"m":
 //			escribir "la multiplicacion es " num1 * num2
-//		4:	
+//		"d":	
 //			escribir "la divsion es " num1 / num2
 //			
 //		De Otro Modo:
@@ -211,13 +222,13 @@
 //		
 //	SiNo
 //		si num mod 2 <>0  entonces	
-//		escribir "es impar"
-//	sino  
-//		escribir "es par"
-//		
+//			escribir "es impar"
+//		sino  
+//			escribir "es par"
+//			
+//		FinSi
 //	FinSi
-//FinSi
-//
+//	
 //FinAlgoritmo
 
 
@@ -232,6 +243,7 @@
 ////				? Si sólo cumple la segunda condición, grado 7.
 ////					? Si cumple las dos condiciones, grado 8
 
+
 //Algoritmo ejercicio11
 //	Definir tornillosdef , tornillossin Como Entero
 //	
@@ -244,24 +256,24 @@
 //		
 //		escribir " el grado de eficiencia es grado 8"
 //		
-//	
+//		
 //	SiNo
 //		si tornillosdef >200 y tornillossin>10000 entonces	
-//		escribir " el grado de eficiencia es grado 7" 
-//		
-//		
-//	Sino 
-//		si tornillosdef <200 y tornillossin<10000 
-//		escribir " el grado de eficiencia es grado 6" 
-//		
-//	
-//	sino 
-//		si tornillosdef >200 y tornillossin<10000 
-//		escribir " el grado de eficiencia es grado 5" 
+//			escribir " el grado de eficiencia es grado 7" 
+//			
+//			
+//		Sino 
+//			si tornillosdef <200 y tornillossin>10000 
+//				escribir " el grado de eficiencia es grado 6" 
+//				
+//				
+//			sino 
+//				si tornillosdef >200 y tornillossin<10000 
+//					escribir " el grado de eficiencia es grado 5" 
+//				FinSi
+//			FinSi
+//		FinSi
 //	FinSi
-//FinSi
-//FinSi
-//FinSi
-
+//	
 //FinAlgoritmo
 
