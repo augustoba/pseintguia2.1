@@ -1,3 +1,211 @@
-Proceso sin_titulo
-	
-FinProceso
+////////////////extras 2////////////////////
+
+////1)Escribir un algoritmo que dados 2 valores de entrada imprima siempre la división del mayor por el menor.
+////
+
+
+//Proceso ejercicio1
+//	definir num1,num2 Como Entero
+//	Escribir "ingrese dos numeros"
+//	leer num1,num2
+//	si	num1 >num2 Entonces
+//		Escribir num1/num2
+//	SiNo
+//		Escribir num2/num1
+//	FinSi
+//	
+//FinProceso
+
+
+
+
+////2)Dado un número de dos cifras, diseñe un algoritmo que permita obtener el número invertido. Ejemplo, si se introduce 23 que muestre 32.
+////
+
+//Proceso ejercicio2
+//	
+//	Definir num,aux Como Entero
+//	Definir a,b Como Caracter
+//	
+//	Escribir "Ingresa un numero"
+//	leer num
+//	
+//	a = ConvertirATexto(num)
+//	aux = Longitud(a)
+//	b = ""
+//	
+//	
+//	Mientras aux >= 0 Hacer
+//		b = b + Subcadena(a,aux,aux)
+//		aux = aux - 1
+//	FinMientras
+//	Escribir "El numero ",num," invertido es: ",ConvertirANumero(b)
+//	
+//FinProceso
+
+
+////3)Diseñe un algoritmo que lea un número de tres cifras y determine si es o no capicúa.
+
+//Proceso ejercicio3
+//	
+//	definir num, aux1,aux2 Como Entero
+//	
+//	Escribir "ingrese un numero"
+//	Leer num
+//	
+//	aux1 = num mod 10
+//	aux2 = trunc(num/100)
+//	
+//	
+//	si	(aux1 = aux2 ) Entonces
+//		Escribir "es capicua"
+//		
+//	SiNo
+//		Escribir "no es capicua"
+//		
+//	FinSi
+//	
+//FinProceso
+
+
+////				
+////4)Pedir el nombre y los dos apellidos de una persona y mostrar las iniciales.
+//proceso ejercicio4
+//	
+//
+//Definir nombre, apellido1, apellido2, cade1, cade2,cade3 Como Caracter
+//
+//Escribir "ingrese su nombre"
+//Leer nombre
+//cade1=Subcadena(nombre,0,0)
+//
+//Escribir "ingrese su primer apellido"
+//Leer apellido1
+//cade2=Subcadena(apellido1,0,0)
+//
+//Escribir "ingrese su segundo apellido"
+//Leer apellido2
+//cade3=Subcadena(apellido2,0,0)
+//
+//Escribir "las iniciasles son :" cade1," ",cade2," ",cade3   
+//
+//FinProceso
+
+////				
+////5)Escribir un algoritmo que lea 3 números los cuales significan una fecha (día, mes, año). Comprobar que sea válida la fecha, si no es valido que imprima un mensaje de error, y si es válida imprimir el mes con su nombre.
+
+//proceso ejercicio5
+
+//	definir dia,mes,anio Como Entero
+//	Escribir "ingrese dia, mes año"
+//	Leer dia,mes,anio
+//	
+//	
+//	si dia<1 o d> 31 Entonces
+//		Repetir
+//			Escribir "dia incorrecto, ingrese un dia"
+//			leer dia
+//	Hasta Que dia>0 o d<= 31	
+//	
+//		
+//	FinSi
+//	
+//	si	mes<1 o d> 12 Entonces
+//		Repetir
+//		Escribir "mes incorrecto, ingrese un mes"
+//		Leer mes
+//		
+//	Hasta Que mes>0 o d<= 12	
+//	FinSi
+//	
+//	Segun mes Hacer
+//		1:
+//			escribir dia," de enero ",anio
+//		2:
+//			escribir dia," de febrero ",anio
+//		3:
+//			escribir dia," de marzo ",anio
+//		4:
+//			escribir dia," de abril ",anio
+//		5:
+//			escribir dia," de mayo ",anio
+//		6:
+//			escribir dia," de junio ",anio
+//			
+//		7:
+//			escribir dia," de julio ",anio
+//		8:
+//			escribir dia," de agosto ",anio
+//		9:
+//			escribir dia," de septiembre ",anio
+//			
+//		10:
+//			escribir dia," de octubre ",anio
+//		11:
+//			escribir dia," de noviembre ",anio
+//		12:
+//			escribir dia," de diciembre ",anio
+//		
+//	Fin Segun
+//
+//FinProceso
+
+
+
+
+////6)Realice un programa que calcule la nómina salarial neto, de unos obreros cuyo trabajo se paga
+///en horas. El cálculo se realiza de la siguiente forma:
+////- Las primeras 35 horas a una tarifa fija.
+////						
+////- Las horas extras se pagan a 1.5 más de la tarifa fija.
+////						
+////- Los impuestos a deducir de los trabajadores varian, segun el sueldo mensual si el sueldo 
+///es menos a $20,000.00 el sueldo es libre de impuesto y si es al contrario se cobrará un 20% de impuesto.
+
+//Proceso ejercicio6
+//	
+//	definir horas,tfija,sueldo,aux Como Real
+//	Escribir "ingrese la cantidad de horas trabajadas"
+//	Leer horas
+//	Escribir "ingrese la tarifa por hora "
+//	Leer tfija
+//	
+//	sueldo=0
+//	
+//	Si horas<=35  Entonces
+//		sueldo= tfija*horas
+//	SiNo
+//		si horas>35 entonces
+//				
+//		aux =horas-35
+//		sueldo = tfija*35 + (aux*tfija *1.5)
+//	Fin Si
+//FinSi
+//	si	sueldo >20000 Entonces
+//		Escribir "el sueldo es:",sueldo*.8
+//	SiNo
+//		Escribir "el sueldo es:",sueldo
+//		
+//	FinSi
+//FinProceso
+
+
+
+////7)Crea una aplicación que nos pida un día de la semana y que nos diga si es un dia laboral o no
+
+//proceso ejercicio7
+//	definir dia Como Caracter
+//	escribir "ingrese un dia"
+//	Leer dia
+//	
+//	Si dia ="sabado" o dia ="domingo"   Entonces
+//		Escribir "es un dia no laboral"
+//	SiNo
+//		Escribir "es un dia laboral"
+//	Fin Si
+//
+//FinProceso
+
+
+
+
