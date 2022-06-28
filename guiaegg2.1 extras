@@ -308,18 +308,18 @@
 //	Escribir "ingrese las 4 notas"
 //	Leer nota1,nota2,nota3, nota4
 //	
-//	si	nota1 >nota2 y nota1 >nota3 y nota1 >nota4 Entonces
+//	si	nota1 <nota2 y nota1 <nota3 y nota1 <nota4 Entonces
 //		
 //		aux= nota1
 //		
 //	SiNo
-//		si	 nota2 >nota1 y nota2 >nota3 y nota2 >nota4 Entonces
+//		si	 nota2 <nota1 y nota2 <nota3 y nota2 <nota4 Entonces
 //			
 //			aux= nota2
 //			
 //		SiNo
 //			
-//			si nota3 >nota1 y nota3 >nota2 y nota3 >nota4 Entonces
+//			si nota3 <nota1 y nota3 <nota2 y nota3 <nota4 Entonces
 //				
 //				aux= nota3
 //				
@@ -327,11 +327,11 @@
 //				aux=nota4
 //			FinSi
 //			
-//			FinSi
-//			
-//			
 //		FinSi
 //		
+//		
+//	FinSi
+//	
 //	Escribir "la nota eliminada es: ", aux
 //	Escribir "el promedio es: ", (nota1+nota2+nota3+nota4-aux)/3
 //	
